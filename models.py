@@ -1,4 +1,3 @@
-
 from peewee import *
 from datetime import datetime
 from config import DB_CONFIG
@@ -16,3 +15,6 @@ class CoinPrice(BaseModel):
 
     class Meta:
         table_name = 'coin_prices'
+        indexes = (
+            (('symbol', 'timestamp'), True),  # Unique index
+        )
