@@ -1,5 +1,6 @@
-
 python-binance==1.0.16
 peewee==3.16.2
 python-dotenv==1.0.0
 psycopg2-binary==2.9.6
+scikit-learn==1.2.2
+numpy==1.24.3
